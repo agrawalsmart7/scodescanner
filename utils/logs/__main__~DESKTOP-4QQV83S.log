@@ -1,0 +1,1435 @@
+2021-05-15 20:17:34,272 testcase_new INFO: htmlentities()
+2021-05-15 20:17:34,333 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:20:25,686 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:21:20,818 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:21:20,833 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:21:20,833 testcase_new INFO: 	[+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:21:20,848 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:21:20,850 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["hacked"]', '$_GET["second"]', '$_GET["testing"]', '$_GET["fourth"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:21:20,859 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:21:20,885 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:21:20,885 testcase_new INFO: htmlentities()
+2021-05-15 20:21:53,278 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:21:53,291 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:21:53,292 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:21:53,292 testcase_new INFO: 	[+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:21:53,293 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:21:53,293 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:21:53,293 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["second"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["fourth"]'}
+
+
+2021-05-15 20:21:53,293 testcase_new INFO: 			[]
+2021-05-15 20:21:53,293 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:21:53,293 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:21:53,293 testcase_new INFO: htmlentities()
+2021-05-15 20:21:53,293 testcase_new INFO: 			[]
+2021-05-15 20:21:53,293 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:21:53,293 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:21:53,298 testcase_new INFO: 			[]
+2021-05-15 20:22:24,920 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:22:24,920 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:22:24,920 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:22:24,926 testcase_new INFO: 	[+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:22:24,926 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:22:24,926 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:22:24,926 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["second"]', '$_GET["testing"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:22:24,928 testcase_new INFO: 			[]
+2021-05-15 20:22:24,928 testcase_new INFO: 			[]
+2021-05-15 20:22:24,928 testcase_new INFO: 			[]
+2021-05-15 20:22:24,929 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:22:24,929 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:22:24,930 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:22:24,930 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:22:24,930 testcase_new INFO: htmlentities()
+2021-05-15 20:22:24,930 testcase_new INFO: 
+	Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:22:24,930 testcase_new INFO: 
+	Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:22:24,930 testcase_new INFO: 
+	Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:22:24,930 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:22:44,579 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:22:44,586 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:22:44,586 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:22:44,586 testcase_new INFO: [+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:22:44,587 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:22:44,588 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:22:44,588 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["second"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["hacked"]'}
+
+
+2021-05-15 20:22:44,588 testcase_new INFO: 			[]
+2021-05-15 20:22:44,588 testcase_new INFO: 			[]
+2021-05-15 20:22:44,588 testcase_new INFO: 			[]
+2021-05-15 20:22:44,588 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:22:44,588 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:22:44,588 testcase_new INFO: htmlentities()
+2021-05-15 20:22:44,588 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:22:44,588 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:22:44,588 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:22:44,588 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:22:44,588 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:22:44,595 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:23:22,527 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:23:22,527 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:23:22,536 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:23:22,536 testcase_new INFO: [+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:23:22,536 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:23:22,536 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+2021-05-15 20:23:22,538 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["second"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["hacked"]'}
+
+
+2021-05-15 20:23:22,539 testcase_new INFO: 			[]
+2021-05-15 20:23:22,540 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:23:22,540 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+2021-05-15 20:23:22,540 testcase_new INFO: htmlentities()
+2021-05-15 20:23:22,540 testcase_new INFO: 			[]
+2021-05-15 20:23:22,540 testcase_new INFO: 			[]
+2021-05-15 20:23:22,540 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:23:22,540 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+2021-05-15 20:23:22,543 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:23:22,543 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:23:22,543 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:23:22,543 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:23:28,148 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:23:28,148 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:23:28,148 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:23:28,148 testcase_new INFO: [+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:23:28,156 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:23:28,157 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+2021-05-15 20:23:28,158 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["second"]', '$_GET["testing"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:23:28,158 testcase_new INFO: 			[]
+2021-05-15 20:23:28,160 testcase_new INFO: 			[]
+2021-05-15 20:23:28,160 testcase_new INFO: 			[]
+2021-05-15 20:23:28,160 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:23:28,161 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+2021-05-15 20:23:28,162 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:23:28,162 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+2021-05-15 20:23:28,163 testcase_new INFO: htmlentities()
+2021-05-15 20:23:28,163 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:23:28,163 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:23:28,163 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:23:28,163 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:23:49,925 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:23:49,940 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:23:49,940 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:23:49,941 testcase_new INFO: [+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:23:49,942 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:23:49,942 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:23:49,943 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["second"]', '$_GET["hacked"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:23:49,944 testcase_new INFO: 			[]
+2021-05-15 20:23:49,944 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:23:49,944 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:23:49,945 testcase_new INFO: 			[]
+2021-05-15 20:23:49,945 testcase_new INFO: 			[]
+2021-05-15 20:23:49,945 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:23:49,946 testcase_new INFO: 	[+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:23:49,946 testcase_new INFO: htmlentities()
+2021-05-15 20:23:49,946 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:23:49,946 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:23:49,946 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:23:49,946 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:25:12,288 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:25:12,305 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:25:12,305 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:25:12,305 testcase_new INFO: [+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:25:12,305 testcase_new INFO: 	[+]Found: $firstvar	 ininclude()
+
+2021-05-15 20:25:12,305 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:25:12,305 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:25:12,307 testcase_new INFO: 	[+]Found: $secondvar	 insystem()
+
+2021-05-15 20:25:12,308 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["fourth"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["second"]', '$_GET["hacked"]'}
+
+
+2021-05-15 20:25:12,308 testcase_new INFO: 			[]
+2021-05-15 20:25:12,308 testcase_new INFO: 			[]
+2021-05-15 20:25:12,308 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:25:12,308 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:25:12,308 testcase_new INFO: htmlentities()
+2021-05-15 20:25:12,308 testcase_new INFO: 			[]
+2021-05-15 20:25:12,308 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:25:12,312 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:25:12,312 testcase_new INFO: 	[+]Found: $_GET["hacked"]	 inunserialize()
+
+2021-05-15 20:25:12,312 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:25:12,312 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:25:12,314 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:25:12,314 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:25:24,759 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:25:24,759 testcase_new INFO: 			['aaaaa($firstvar)', 'include($firstvar)']
+2021-05-15 20:25:24,759 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:25:24,759 testcase_new INFO: [+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:25:24,759 testcase_new INFO: 	[+]Found: $firstvar	 ininclude()
+
+2021-05-15 20:25:24,759 testcase_new INFO: 			['system($secondvar)']
+2021-05-15 20:25:24,759 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:25:24,767 testcase_new INFO: 	[+]Found: $secondvar	 insystem()
+
+2021-05-15 20:25:24,768 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["hacked"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["second"]', '$_GET["fourth"]'}
+
+
+2021-05-15 20:25:24,768 testcase_new INFO: 			['unserialize($_GET["hacked"])']
+2021-05-15 20:25:24,768 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:25:24,769 testcase_new INFO: 	[+]Found: $_GET["hacked"]	 inunserialize()
+
+2021-05-15 20:25:24,770 testcase_new INFO: 			['htmlentities($_GET["cmd"])']
+2021-05-15 20:25:24,770 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:25:24,771 testcase_new INFO: htmlentities()
+2021-05-15 20:25:24,771 testcase_new INFO: 			[]
+2021-05-15 20:25:24,772 testcase_new INFO: 			[]
+2021-05-15 20:25:24,772 testcase_new INFO: 			[]
+2021-05-15 20:25:24,772 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:25:24,772 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:25:24,772 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:25:24,772 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:26:55,813 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:26:55,813 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:26:55,827 testcase_new INFO: [+]Variable Found inside custom function: 	aaaaa()
+
+2021-05-15 20:26:55,827 testcase_new INFO: 	[+]Found: $firstvar	 ininclude()
+
+2021-05-15 20:26:55,828 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:26:55,828 testcase_new INFO: 	[+]Found: $secondvar	 insystem()
+
+2021-05-15 20:26:55,828 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["hacked"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:26:55,828 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:26:55,828 testcase_new INFO: 	[+]Found: $_GET["hacked"]	 inunserialize()
+
+2021-05-15 20:26:55,828 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:26:55,828 testcase_new INFO: htmlentities()
+2021-05-15 20:26:55,828 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:26:55,830 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:26:55,830 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:26:55,830 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:29:53,950 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:29:53,957 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['aaaaa($firstvar)', 'include($firstvar)']
+
+2021-05-15 20:29:53,957 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['system($secondvar)']
+
+2021-05-15 20:29:53,957 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["cmd"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["hacked"]'}
+
+
+2021-05-15 20:29:53,957 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['htmlentities($_GET["cmd"])']
+
+2021-05-15 20:29:53,957 testcase_new INFO: htmlentities()
+2021-05-15 20:29:53,957 testcase_new INFO: [+] Functions with variables EXTRACTED from the code: 	['unserialize($_GET["hacked"])']
+
+2021-05-15 20:29:53,961 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:29:53,962 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:29:53,962 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:29:53,963 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:31:08,603 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:31:08,603 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["fourth"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["second"]', '$_GET["hacked"]'}
+
+
+2021-05-15 20:31:08,612 testcase_new INFO: htmlentities()
+2021-05-15 20:31:08,612 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:31:08,612 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:31:08,612 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:31:08,612 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:33:13,449 testcase_new INFO: 
+[!]PHP Variables found inside code,Checking further if these variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:33:13,457 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	{'$_GET["hacked"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["second"]', '$_GET["testing"]'}
+
+
+2021-05-15 20:33:13,457 testcase_new INFO: htmlentities()
+2021-05-15 20:33:13,457 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:33:13,457 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:33:13,457 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:33:13,457 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:35:05,344 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:35:05,344 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["testing"]', '$_GET["second"]', '$_GET["cmd"]', '$_GET["hacked"]', '$_GET["fourth"]'}
+
+
+2021-05-15 20:35:05,344 testcase_new INFO: htmlentities()
+2021-05-15 20:35:05,344 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- dangerous functions['include()']
+2021-05-15 20:35:05,344 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- dangerous functions['system()']
+2021-05-15 20:35:05,344 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- dangerous functions['unserialize()']
+2021-05-15 20:35:05,344 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:35:27,172 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:35:27,188 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["hacked"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["second"]'}
+
+
+2021-05-15 20:35:27,190 testcase_new INFO: htmlentities()
+2021-05-15 20:35:27,192 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:35:27,192 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:35:27,192 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:35:27,192 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:35:49,377 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:35:49,377 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["testing"]', '$_GET["fourth"]', '$_GET["second"]', '$_GET["hacked"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:35:49,377 testcase_new INFO: htmlentities()
+2021-05-15 20:36:05,988 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:36:05,988 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["cmd"]', '$_GET["second"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["fourth"]'}
+
+
+2021-05-15 20:36:05,988 testcase_new INFO: htmlentities()
+2021-05-15 20:36:05,988 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:36:05,988 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:36:05,988 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:36:05,988 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:43:18,485 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:43:18,485 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["fourth"]', '$_GET["second"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:43:18,485 testcase_new INFO: htmlentities()
+2021-05-15 20:43:33,318 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:43:33,320 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["hacked"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["second"]'}
+
+
+2021-05-15 20:43:33,321 testcase_new INFO: htmlentities()
+2021-05-15 20:44:07,817 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:44:07,817 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["fourth"]', '$_GET["second"]', '$_GET["hacked"]', '$_GET["testing"]', '$_GET["cmd"]'}
+
+
+2021-05-15 20:44:07,817 testcase_new INFO: htmlentities()
+2021-05-15 20:44:07,833 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:44:32,412 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:44:32,412 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["fourth"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["hacked"]', '$_GET["second"]'}
+
+
+2021-05-15 20:44:32,412 testcase_new INFO: htmlentities()
+2021-05-15 20:44:32,412 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:50:15,748 testcase_new INFO: 
+[!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:50:15,748 testcase_new INFO: 
+[!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["second"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["hacked"]', '$_GET["fourth"]'}
+
+
+2021-05-15 20:50:15,764 testcase_new INFO: htmlentities()
+2021-05-15 20:50:15,764 testcase_new INFO: 
+Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:50:15,764 testcase_new INFO: 
+Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:50:15,764 testcase_new INFO: 
+Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:50:15,764 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:50:54,134 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:50:54,134 testcase_new INFO: [!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["hacked"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["second"]'}
+
+
+2021-05-15 20:50:54,134 testcase_new INFO: htmlentities()
+2021-05-15 20:50:54,134 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:50:54,134 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:50:54,134 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:50:54,134 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:53:06,868 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:53:06,868 testcase_new INFO: [!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 {'$_GET["hacked"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["second"]', '$_GET["fourth"]'}
+
+
+2021-05-15 20:53:06,868 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:53:06,868 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:53:06,868 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:53:06,868 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:53:38,459 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:53:48,282 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:53:48,282 testcase_new INFO: [!]PHP PRE-Defined Variables found, checking if these variables resides inside any dangerous funtions: 	 5
+
+
+2021-05-15 20:53:48,297 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:53:48,297 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:53:48,297 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:53:48,297 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:54:55,451 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:54:55,451 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["second"]', '$_GET["fourth"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["hacked"]'}
+2021-05-15 20:54:55,451 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:54:55,451 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:54:55,467 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:54:55,467 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 20:55:11,779 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:55:36,426 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 20:55:36,426 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["testing"]', '$_GET["hacked"]', '$_GET["fourth"]', '$_GET["second"]', '$_GET["cmd"]'}
+
+2021-05-15 20:55:36,432 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 20:55:36,432 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 20:55:36,432 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 20:55:36,432 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:00:05,475 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:00:05,475 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["fourth"]', '$_GET["hacked"]', '$_GET["testing"]', '$_GET["second"]', '$_GET["cmd"]'}
+
+2021-05-15 21:00:05,475 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:00:05,475 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:00:05,475 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:00:05,475 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:00:21,195 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:00:21,195 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["fourth"]', '$_GET["second"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["hacked"]'}
+
+2021-05-15 21:00:21,195 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:00:21,195 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:00:21,195 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:00:21,195 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:00:52,185 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:00:52,185 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["fourth"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["cmd"]', '$_GET["second"]'}
+
+2021-05-15 21:00:52,201 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:00:52,201 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:00:52,201 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:00:52,201 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:07:29,143 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:07:29,143 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["cmd"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["testing"]'}
+
+2021-05-15 21:07:29,143 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:07:29,143 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:07:29,143 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:07:29,143 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:08:29,978 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:08:29,978 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["second"]', '$_GET["cmd"]', '$_GET["hacked"]', '$_GET["testing"]', '$_GET["fourth"]'}
+
+2021-05-15 21:08:29,994 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:08:29,994 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:08:29,994 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:08:29,994 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:09:15,838 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:09:15,838 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["fourth"]', '$_GET["hacked"]', '$_GET["second"]', '$_GET["cmd"]', '$_GET["testing"]'}
+
+2021-05-15 21:09:15,851 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:09:15,851 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:09:15,851 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:09:15,851 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:12:41,535 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:12:41,535 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["second"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["testing"]'}
+
+2021-05-15 21:12:41,540 testcase_new INFO: we found something
+2021-05-15 21:12:41,540 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:12:41,540 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:12:41,540 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:12:41,543 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:14:51,949 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:14:51,949 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["cmd"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["hacked"]'}
+
+2021-05-15 21:14:51,949 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:14:51,949 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:14:51,949 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:14:51,949 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:15:07,784 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:15:07,784 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["cmd"]', '$_GET["fourth"]', '$_GET["second"]', '$_GET["hacked"]', '$_GET["testing"]'}
+
+2021-05-15 21:15:07,784 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:15:07,784 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:15:07,784 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:15:07,784 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:17:54,612 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:17:54,612 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["testing"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["cmd"]', '$_GET["hacked"]'}
+
+2021-05-15 21:18:14,098 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:18:14,098 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["testing"]', '$_GET["cmd"]', '$_GET["hacked"]', '$_GET["fourth"]', '$_GET["second"]'}
+
+2021-05-15 21:18:14,114 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:18:14,114 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:18:14,114 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:18:14,114 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:18:43,355 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:18:43,355 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["cmd"]', '$_GET["fourth"]', '$_GET["second"]', '$_GET["hacked"]', '$_GET["testing"]'}
+
+2021-05-15 21:18:43,355 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:18:43,355 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:18:43,355 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:18:43,355 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-15 21:26:34,059 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-15 21:26:34,059 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["second"]', '$_GET["hacked"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["fourth"]'}
+
+2021-05-15 21:26:34,059 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-15 21:26:34,059 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-15 21:26:34,059 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-15 21:26:34,059 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-16 12:46:28,072 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-16 12:46:28,089 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["cmd"]', '$_GET["hacked"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["testing"]'}
+
+2021-05-16 12:46:28,089 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-16 12:46:28,089 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-16 12:46:28,089 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-16 12:46:28,089 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-16 12:46:46,231 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-16 12:46:46,241 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["hacked"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["second"]'}
+
+2021-05-16 12:46:46,242 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-16 12:46:46,242 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-16 12:46:46,244 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-16 12:46:46,245 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-16 12:47:03,512 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-16 12:47:03,512 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["hacked"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["second"]'}
+
+2021-05-16 12:47:03,512 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-16 12:47:03,512 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-16 12:47:03,512 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-16 12:47:03,512 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 11:15:06,913 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 11:15:06,921 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["second"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["cmd"]'}
+
+2021-05-18 11:15:06,921 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 11:15:06,921 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 11:15:06,921 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 11:15:06,921 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 11:16:46,285 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 11:16:46,285 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["hacked"]', '$_GET["second"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["fourth"]'}
+
+2021-05-18 11:16:46,289 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 11:16:46,289 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 11:16:46,289 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 11:16:46,290 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 11:17:08,471 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 11:17:08,471 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["testing"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["cmd"]'}
+
+2021-05-18 11:17:08,475 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 11:17:08,475 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 11:17:08,475 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 11:17:08,476 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 11:29:06,004 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 11:29:06,004 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["testing"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["second"]', '$_GET["cmd"]'}
+
+2021-05-18 11:29:06,007 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 11:29:06,008 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 11:29:06,008 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 11:29:06,008 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 11:30:16,074 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 11:30:16,078 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["second"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["cmd"]', '$_GET["testing"]'}
+
+2021-05-18 11:30:16,081 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 11:30:16,081 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 11:30:16,082 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 11:30:16,082 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 11:30:48,818 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 11:30:48,822 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["fourth"]', '$_GET["hacked"]', '$_GET["testing"]', '$_GET["second"]', '$_GET["cmd"]'}
+
+2021-05-18 11:30:48,824 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 11:30:48,824 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 11:30:48,824 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 11:30:48,824 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 11:33:38,938 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 11:33:38,942 testcase_new INFO: [!]PHP PRE-Defined Variables found 5
+{'$_GET["second"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["fourth"]'}
+
+2021-05-18 11:33:38,945 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 11:33:38,945 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 11:33:38,945 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 11:33:38,945 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:02:13,859 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:02:13,863 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["hacked"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["aaa"]', '$_GET["second"]'}
+
+2021-05-18 19:02:13,864 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:02:13,864 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:02:13,864 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:02:40,615 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:02:40,615 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["testing"]', '$_GET["second"]', '$_GET["cmd"]', '$_GET["aaa"]', '$_GET["hacked"]', '$_GET["fourth"]'}
+
+2021-05-18 19:02:40,619 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:02:40,619 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:02:40,619 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:02:40,623 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:10:52,336 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:10:52,341 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["testing"]', '$_GET["aaa"]', '$_GET["second"]', '$_GET["hacked"]', '$_GET["cmd"]', '$_GET["fourth"]'}
+
+2021-05-18 19:10:52,341 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:10:52,341 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:10:52,341 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:10:52,341 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:10:52,345 testcase_new INFO: [+]Found	. $_GET["aaa"]
+2021-05-18 19:10:52,345 testcase_new INFO: [+]Found	echo $_GET["fourth"]
+2021-05-18 19:10:52,345 testcase_new INFO: [+]Found	. $_GET
+2021-05-18 19:10:52,345 testcase_new INFO: [+]Found	echo $_GET
+2021-05-18 19:10:52,345 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:12:10,368 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:12:10,373 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["cmd"]', '$_GET["second"]', '$_GET["aaa"]', '$_GET["fourth"]', '$_GET["hacked"]', '$_GET["testing"]'}
+
+2021-05-18 19:12:10,373 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:12:10,373 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:12:10,373 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:12:10,373 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:12:10,377 testcase_new INFO: [+]Found	. $_GET["aaa"]
+2021-05-18 19:12:10,377 testcase_new INFO: [+]Found	echo $_GET["fourth"]
+2021-05-18 19:12:10,377 testcase_new INFO: [+]Found	. $_GET
+2021-05-18 19:12:10,377 testcase_new INFO: [+]Found	echo $_GET
+2021-05-18 19:12:10,377 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:18:00,606 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:18:00,610 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["aaa"]', '$_GET["cmd"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["second"]', '$_GET["fourth"]'}
+
+2021-05-18 19:18:00,610 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:18:00,610 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:18:00,610 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:18:00,610 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:18:00,614 testcase_new INFO: [+]Found	. $_GET["aaa"]
+2021-05-18 19:18:00,614 testcase_new INFO: [+]Found	echo $_GET["fourth"]
+2021-05-18 19:18:00,614 testcase_new INFO: [+]Found	. $_GET
+2021-05-18 19:18:00,614 testcase_new INFO: [+]Found	echo $_GET
+2021-05-18 19:18:00,614 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:18:27,238 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:18:27,244 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["hacked"]', '$_GET["fourth"]', '$_GET["testing"]', '$_GET["second"]', '$_GET["cmd"]', '$_GET["aaa"]'}
+
+2021-05-18 19:18:27,249 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:18:27,249 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:18:27,249 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:18:27,249 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:18:27,249 testcase_new INFO: [+]Found	. $_GET["aaa"]
+2021-05-18 19:18:27,249 testcase_new INFO: [+]Found	echo $_GET["fourth"]
+2021-05-18 19:18:27,249 testcase_new INFO: [+]Found	. $_GET
+2021-05-18 19:18:27,249 testcase_new INFO: [+]Found	echo $_GET
+2021-05-18 19:18:27,249 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:21:23,064 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:21:23,068 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["cmd"]', '$_GET["testing"]', '$_GET["aaa"]', '$_GET["second"]', '$_GET["fourth"]', '$_GET["hacked"]'}
+
+2021-05-18 19:21:23,071 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:21:23,071 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:21:23,071 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:21:23,073 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:21:23,073 testcase_new INFO: [+]Found	. $_GET["aaa"]
+2021-05-18 19:21:23,073 testcase_new INFO: [+]Found	echo $_GET["fourth"]
+2021-05-18 19:21:23,073 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:23:38,565 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:23:38,565 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["aaa"]', '$_GET["testing"]', '$_GET["second"]', '$_GET["hacked"]', '$_GET["fourth"]', '$_GET["cmd"]'}
+
+2021-05-18 19:23:38,569 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:23:38,569 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:23:38,570 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:23:38,570 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:23:38,570 testcase_new INFO: [+]Found	. $_GET["aaa"]
+2021-05-18 19:23:38,570 testcase_new INFO: [+]Found	echo $_GET["fourth"]
+2021-05-18 19:23:38,570 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:51:20,833 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:51:20,833 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["hacked"]', '$_GET["second"]', '$_GET["aaa"]', '$_GET["testing"]', '$_GET["cmd"]', '$_GET["fourth"]'}
+
+2021-05-18 19:51:20,837 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:51:20,837 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:51:20,839 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:51:20,839 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:51:20,839 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 19:51:20,839 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 19:51:20,839 testcase_new INFO: 
+
+[!!!]Now Checking Custom Function
+
+
+2021-05-18 19:53:37,602 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 19:53:37,602 testcase_new INFO: [!]PHP PRE-Defined Variables found 6
+{'$_GET["hacked"]', '$_GET["fourth"]', '$_GET["second"]', '$_GET["cmd"]', '$_GET["aaa"]', '$_GET["testing"]'}
+
+2021-05-18 19:53:37,606 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 19:53:37,606 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 19:53:37,606 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 19:53:37,606 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 19:53:37,606 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 19:53:37,606 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 20:17:31,628 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 20:17:31,629 testcase_new INFO: [!]PHP PRE-Defined Variables found 7
+{'$_GET["testing"]', '$_GET["second"]', '$_GET["aaa"]', '$_GET["cmd"]', "$_GET['id']", '$_GET["fourth"]', '$_GET["hacked"]'}
+
+2021-05-18 20:17:31,630 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 20:17:31,630 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 20:17:31,631 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 20:17:31,631 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 20:17:31,632 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 20:17:31,633 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 20:17:31,633 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 20:19:14,694 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 20:19:14,696 testcase_new INFO: [!]PHP PRE-Defined Variables found 7
+{'$_GET["cmd"]', '$_GET["second"]', '$_GET["hacked"]', '$_GET["testing"]', '$_GET["fourth"]', '$_GET["aaa"]', "$_GET['id']"}
+
+2021-05-18 20:19:14,697 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 20:19:14,697 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 20:19:14,697 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 20:19:14,697 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 20:19:14,697 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 20:19:14,700 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 20:19:14,701 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 20:19:14,701 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 20:19:43,752 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 20:19:43,752 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["second"]', '$_GET["testing"]', '$_GET["hacked"]', '$_GET["cmd"]', "$_GET['name']", "$_GET['id']", '$_GET["aaa"]', '$_GET["fourth"]'}
+
+2021-05-18 20:19:43,752 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 20:19:43,752 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 20:19:43,755 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 20:19:43,755 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 20:19:43,756 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 20:19:43,756 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 20:19:43,756 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 20:19:43,756 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+2021-05-18 22:40:19,293 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 22:40:19,293 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["fourth"]', '$_GET["second"]', '$_GET["testing"]', '$_GET["hacked"]', "$_GET['id']", '$_GET["aaa"]', "$_GET['name']", '$_GET["cmd"]'}
+
+2021-05-18 22:40:19,294 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 22:40:19,294 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 22:40:19,296 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 22:40:19,296 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 22:40:19,296 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 22:40:19,296 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 22:40:19,297 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 22:40:19,297 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+2021-05-18 22:41:33,547 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 22:41:33,547 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["second"]', '$_GET["hacked"]', '$_GET["cmd"]', "$_GET['name']", '$_GET["aaa"]', '$_GET["fourth"]', "$_GET['id']", '$_GET["testing"]'}
+
+2021-05-18 22:41:33,547 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 22:41:33,547 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 22:41:33,547 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 22:41:33,547 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 22:41:33,547 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 22:41:33,547 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 22:41:33,547 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 22:41:33,547 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+2021-05-18 22:46:25,903 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 22:46:25,903 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{"$_GET['name']", '$_GET["fourth"]', '$_GET["cmd"]', '$_GET["hacked"]', '$_GET["second"]', '$_GET["aaa"]', '$_GET["testing"]', "$_GET['id']"}
+
+2021-05-18 22:46:25,903 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 22:46:25,903 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 22:46:25,903 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 22:46:25,903 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 22:46:25,903 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 22:46:25,903 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 22:46:25,903 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 22:46:25,903 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+2021-05-18 22:46:35,395 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 22:46:35,395 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["second"]', '$_GET["testing"]', "$_GET['name']", '$_GET["aaa"]', '$_GET["cmd"]', '$_GET["hacked"]', '$_GET["fourth"]', "$_GET['id']"}
+
+2021-05-18 22:46:35,395 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 22:46:35,395 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 22:46:35,395 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 22:46:35,395 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 22:46:35,395 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 22:46:35,395 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 22:46:35,395 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 22:46:35,395 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+2021-05-18 22:46:53,874 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 22:46:53,874 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["hacked"]', "$_GET['name']", "$_GET['id']", '$_GET["testing"]', '$_GET["second"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["aaa"]'}
+
+2021-05-18 22:46:53,874 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 22:46:53,874 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 22:46:53,874 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 22:46:53,874 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 22:46:53,874 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 22:46:53,874 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 22:46:53,874 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 22:46:53,874 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+2021-05-18 22:54:44,690 new_testing INFO: testing
+2021-05-18 22:56:13,268 new_testing INFO: aaa
+2021-05-18 23:09:04,084 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 23:09:04,085 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["aaa"]', '$_GET["cmd"]', '$_GET["fourth"]', '$_GET["second"]', '$_GET["hacked"]', "$_GET['id']", "$_GET['name']", '$_GET["testing"]'}
+
+2021-05-18 23:09:04,085 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+2021-05-18 23:09:04,086 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+2021-05-18 23:09:04,086 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+2021-05-18 23:09:04,086 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 23:09:04,087 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+2021-05-18 23:09:04,087 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+2021-05-18 23:09:04,087 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+2021-05-18 23:09:04,087 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+2021-05-18 23:11:02,974 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 23:11:02,974 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["fourth"]', "$_GET['id']", '$_GET["aaa"]', '$_GET["second"]', '$_GET["testing"]', '$_GET["hacked"]', "$_GET['name']", '$_GET["cmd"]'}
+
+2021-05-18 23:11:02,974 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+
+2021-05-18 23:11:02,974 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+
+2021-05-18 23:11:02,974 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+
+2021-05-18 23:11:02,974 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 23:11:02,974 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+
+2021-05-18 23:11:02,974 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+
+2021-05-18 23:11:02,974 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+
+2021-05-18 23:11:02,974 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+
+2021-05-18 23:11:37,141 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+2021-05-18 23:11:37,141 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{"$_GET['id']", '$_GET["fourth"]', '$_GET["aaa"]', '$_GET["second"]', '$_GET["testing"]', '$_GET["hacked"]', "$_GET['name']", '$_GET["cmd"]'}
+
+2021-05-18 23:11:37,141 testcase_new INFO: Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+
+2021-05-18 23:11:37,141 testcase_new INFO: Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+
+2021-05-18 23:11:37,141 testcase_new INFO: Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+
+2021-05-18 23:11:37,141 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 23:11:37,141 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+
+2021-05-18 23:11:37,141 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+
+2021-05-18 23:11:37,141 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+
+2021-05-18 23:11:37,141 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+
+2021-05-18 23:13:04,510 testcase_new INFO: [!]Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:2
+['$firstvar = $_GET["testing"]', '$secondvar = $_GET["second"]']
+
+
+
+2021-05-18 23:13:04,510 testcase_new INFO: [!]PHP PRE-Defined Variables found 8
+{'$_GET["testing"]', '$_GET["cmd"]', "$_GET['name']", '$_GET["hacked"]', '$_GET["fourth"]', "$_GET['id']", '$_GET["second"]', '$_GET["aaa"]'}
+
+
+
+2021-05-18 23:13:04,510 testcase_new INFO: [+]Vulnerable Variable: $firstvar 	 Found Inside -- ['include()']
+
+2021-05-18 23:13:04,510 testcase_new INFO: [+]Vulnerable Variable: $secondvar 	 Found Inside -- ['system()']
+
+2021-05-18 23:13:04,510 testcase_new INFO: [+]Vulnerable Variable: $_GET["hacked"]	 Found Inside -- ['unserialize()']
+
+2021-05-18 23:13:04,510 testcase_new INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-18 23:13:04,510 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET["aaa"]
+
+2021-05-18 23:13:04,519 testcase_new INFO: [+]Found unfiltered USE of var 	echo $_GET["fourth"]
+
+2021-05-18 23:13:04,519 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['id']
+
+2021-05-18 23:13:04,519 testcase_new INFO: [+]Found unfiltered USE of var 	. $_GET['name']
+
+2021-05-20 15:20:15,391 runner_regex INFO: [+] Functions with variables EXTRACTED from the code: 	['ldap_search($dn, $dn, $dn, $justthese)']
+
+2021-05-20 15:20:15,391 runner_regex INFO: [+] Functions with variables EXTRACTED from the code: 	['file_exists($file)', 'unlink($file)']
+
+2021-05-20 15:20:15,391 runner_regex INFO: [+] Functions with variables EXTRACTED from the code: 	["unserialize($_GET['data'])"]
+
+2021-05-20 15:20:15,396 runner_regex INFO: [+] Functions with variables EXTRACTED from the code: 	["isset($_GET['file'])"]
+
+2021-05-20 15:20:15,396 runner_regex INFO: Vulnerable Variable: $dn 	 Found Inside -- ['ldap_search()']
+2021-05-20 15:20:15,396 runner_regex INFO: Vulnerable Variable: $_GET['data']	 Found Inside -- ['unserialize()']
+2021-05-20 15:20:15,396 runner_regex INFO: 
+
+ Now checking variable that are printed/using unfiltered
+2021-05-20 15:20:15,396 runner_regex INFO: [+]Found unfiltered USE of var 	. $rootUname
+2021-05-20 15:20:15,396 runner_regex INFO: [+]Found unfiltered USE of var 	. $rootUname
+2021-05-20 15:20:15,396 runner_regex INFO: [+]Found unfiltered USE of var 	. $file
+2021-05-20 23:35:23,419 new_improved_code INFO: ['\n\n<br><br>Please find the result output :- <a href="/dashboard/variables_finder/folderupload/results/out_test_code.php">Output file</a>']

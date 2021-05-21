@@ -1,0 +1,1 @@
+[!] At Line 1<br> PHP PRE-Defined Variables found 1 :&#9;{'$_GET["go"]'}<br><br><br>[+]VULNERABLE at linenumber: 1<br> &emsp; Found unfiltered USE of var 	 &emsp;.$_GET["go"]<br><br>[!] At Line 1<br> PHP PRE-Defined Variables found 1 :&#9;{'$_GET["go"]'}<br><br><br>[+]VULNERABLE at linenumber: 1<br> &emsp; Found unfiltered USE of var 	 &emsp;.$_GET["go"]<br><br>
