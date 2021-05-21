@@ -14,6 +14,10 @@ The main features for this tool are:-
 4) Give results out for each file inside the anchors tag (So you can move on to it.)
 5) You can add more functions which are dangerous if you found missing any inside the vulnerablefunctions python file.
 
+## Demo Video
+
+Please go to:- http://scodescanner.info/2021/05/21/example-content/
+
 ## How to run it?
 
 ### Requirements
