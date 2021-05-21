@@ -1,1 +1,1 @@
-# scodescanner
+# SCodeScanner
