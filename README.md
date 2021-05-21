@@ -2,6 +2,8 @@
 
 The SCodeScanner stands for Source Code Scanner, where you can scan your source code files like PHP and get identify the vulnerabilities inside it. The tool can use by Pentester, Developer to quickly identify the weakness.
 
+Learn more on [http://scodescanner.info](http://scodescanner.info)
+
 ## Features
 
 The main features for this tool are:-
