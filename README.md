@@ -29,9 +29,10 @@ PHP, Python3
 
 If you don't have any of these please download, then,
 
-1) ```php -S localhost:80```<br>
-2) Browse to localhost<br>
-3) Type the foldername which contains the PHP files
+1) On terminal:- `pip install -r requirements.txt`<br>
+2) On terminal:- ```php -S localhost:80```<br>
+3) Browse to localhost<br>
+4) Type the foldername which contains the PHP files
 
 **Note: Please try not to change the main file name 'scscanner.py', otherwise we will have to change the name in upload.php file.**
 
