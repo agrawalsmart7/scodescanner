@@ -9,12 +9,13 @@ Learn more on [http://scodescanner.info](http://scodescanner.info)
 The main features for this tool are:-
 
 1) Scans the whole folder which contains multiple PHP files.
-2) It will not only notify you at which file but also which line the vulnerable code exists for quickly identified it.
-3) Scans not only the PRE-Defined PHP variables but also scans the custom variables. Like a `$test1 = $_GET["aaa"]`, then it scans for both `$test1` and the `GET` variables inside the source code
-4) Scans functions with a function that contains our variable. Like `include(htmlentities($test))` so it will parse this and give the results like the $test variable found inside the include function. Because there might be possiblity of using base64 function instead of htmlentities.
-5) It runs on your localhost, where you will have to give the folder name for scans.
-6) Give results out for each file inside the anchors tag (So you can move on to it.)
-7) You can add more functions which are dangerous if you found missing any inside the vulnerablefunctions python file.
+2) Scans folder inside a folder, *NOTE: This scans only one time, it will not scan folders inside folders inside folder*
+3) It will not only notify you at which file but also which line the vulnerable code exists for quickly identified it.
+4) Scans not only the PRE-Defined PHP variables but also scans the custom variables. Like a `$test1 = $_GET["aaa"]`, then it scans for both `$test1` and the `GET` variables inside the source code
+5) Scans functions with a function that contains our variable. Like `include(htmlentities($test))` so it will parse this and give the results like the $test variable found inside the include function. Because there might be possiblity of using base64 function instead of htmlentities.
+6) It runs on your localhost, where you will have to give the folder name for scans.
+7) Give results out for each file inside the anchors tag (So you can move on to it.)
+8) You can add more functions which are dangerous if you found missing any inside the vulnerablefunctions python file.
 
 ## Demo Video
 
@@ -36,7 +37,7 @@ If you don't have any of these please download, then,
 
 ## Feedback
 
-I would really like to hear your thoughts on this tool. And if you wanted to participate in this tool please let me know on Twitter [agrawalsmart7](https://twitter.com/agrawalsmart7) or you can send me a Pull request.
+I would really like to hear your thoughts on this tool. And if you wanted to contribute in this tool please let me know on Twitter [agrawalsmart7](https://twitter.com/agrawalsmart7) or you can send me a Pull request.
 
 
 ## Future Work
