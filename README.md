@@ -29,10 +29,11 @@ PHP, Python3
 
 If you don't have any of these please download, then,
 
-1) On terminal:- `pip install -r requirements.txt`<br>
-2) On terminal:- ```php -S localhost:80```<br>
-3) Browse to localhost<br>
-4) Type the foldername which contains the PHP files
+1) Upload your folder which contains files inside upload directory, find it in root folder of this tool. This is important to run this tool.
+2) On terminal:- `pip install -r requirements.txt`<br>
+3) On terminal:- ```php -S localhost:80```<br>
+4) Browse to localhost<br>
+5) Type the foldername which contains the PHP files
 
 **Note: Please try not to change the main file name 'scscanner.py', otherwise we will have to change the name in upload.php file.**
 
