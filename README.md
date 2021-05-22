@@ -17,6 +17,12 @@ The main features for this tool are:-
 7) Give results out for each file inside the anchors tag (So you can move on to it.)
 8) You can add more functions which are dangerous if you found missing any inside the vulnerablefunctions python file.
 
+## Test Vulnerable Folders
+
+This tool uses vulnerable scripts from this repo:- https://github.com/snoopysecurity/Vulnerable-Code-Snippets
+
+There are predifined folder named final, where it contains the PHP files/folder. Just for test.
+
 ## Demo Video
 
 Please go to:- http://scodescanner.info/2021/05/21/example-content/
