@@ -1,0 +1,1 @@
+[!] At Line 11<br> PHP PRE-Defined Variables found 1 :&#9;{"$_GET['page']"}<br><br>[!] At Line 14<br> PHP PRE-Defined Variables found 1 :&#9;{"$_GET['page']"}<br><br>[+]VULNERABLE at line:14<br> &emsp; Found Variable: $_GET['page']	 Found Inside &emsp; -- 	 &emsp;{'unserialize()'}<br><br><br>

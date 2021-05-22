@@ -2,14 +2,18 @@ import os
 import re
 from src.regexes import regex1,regex1_1, regex2, regex3, regex4, regex5
 from src.check_functions import check_func
+from utils import logs_handler
+from time import sleep
+
+logger = logs_handler.create_logger(__name__, remote_logging=False)
 
 
-def parse_helper(lines, linenumber, out_result, only_variables, vars, indi_prevars, indi_vars):
-    
+
+def parse_helper(lines, fullcontent, linenumber, out_result, only_variables, vars, indi_prevars, indi_vars):
 
     content = str(lines)
-    results = re.findall(regex1, content)
-    
+    results = re.findall(regex1, content) #['$test = $_REQUEST["aaaaa"]']
+
     if results:
         
         info = "[!] At Line "+str(linenumber)+ "<br> Variables Contained Pre-Defined PHP Variables found inside code,Checking further if these new variables resides inside any dangerous funtions:"+str(len(results))+" :&#9;"+ str(results)+ "<br><br>"
@@ -19,10 +23,10 @@ def parse_helper(lines, linenumber, out_result, only_variables, vars, indi_preva
         for result in results:
             only_variable = re.sub(regex1_1, '', result)
             only_variables.append(only_variable.strip())
-            check_result = check_func(only_variable.strip(), content)
+            check_result = check_func(only_variable.strip(), fullcontent)
             if check_result:
                 vars[only_variable] = [check_result, linenumber]
-
+    
     result2 = re.findall(regex2, content)
     if result2:
         info ="[!] At Line "+str(linenumber)+ "<br> PHP PRE-Defined Variables found "+ str(len(set(result2)))+" :&#9;"+str(set(result2))+"<br><br>"
@@ -47,16 +51,15 @@ def parse_helper(lines, linenumber, out_result, only_variables, vars, indi_preva
             for alone_vars in result5:
                 indi_vars.append({alone_vars:linenumber})
 
-def parser(lines, out_result): 
+def parser(lines, fullcontent, out_result): 
     only_variables = []
     vars = {}
     indi_prevars = []
     indi_vars = []
-
-    list_lines = []
     for contents in lines:
+        
         for content, number in contents.items():
-            parse_helper(content, number, out_result, only_variables, vars, indi_prevars, indi_vars)
+            parse_helper(content, fullcontent, number, out_result, only_variables, vars, indi_prevars, indi_vars)
 
     return indi_prevars, indi_vars, vars 
 

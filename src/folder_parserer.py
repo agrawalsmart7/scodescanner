@@ -12,7 +12,7 @@ def folderparser(folder):
         with open('../../results/out_'+filename,'a') as out_result:
             if filename.endswith(".php"):
                 with open(filename, 'r', encoding="utf8") as f:
-                    runner(filename, f, out_result, outdirectory+filename)
+                    runner(f, filename, out_result, outdirectory+filename)
 
     if html_return:
         for html in set(html_return):

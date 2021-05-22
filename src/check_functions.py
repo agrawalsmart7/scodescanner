@@ -5,10 +5,8 @@ from src.globalvar import custom_functions
 def check_func(string, content):
     funcs = []
     pre_variables =re.escape(string)
-
     loc_regex = r'(?:\w+\([^()]*|\w+\(\w+\(*)'+pre_variables+r'[^()]*\)'
-    # loc_regex2 = 
-    results = re.findall(loc_regex, content)
+    results = re.findall(loc_regex, str(content))
     if results:
         for result in results:
             only_function = re.sub(r'\([^()]*\)', '()', str(result))
@@ -23,4 +21,4 @@ def check_func(string, content):
 
 
     if funcs:
-        return set(funcs)      
+        return set(funcs)    
