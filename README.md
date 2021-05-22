@@ -2,15 +2,23 @@
 
 The SCodeScanner stands for Source Code Scanner, where you can scan your source code files like PHP and get identify the vulnerabilities inside it. The tool can use by Pentester, Developer to quickly identify the weakness.
 
+Learn more on [http://scodescanner.info](http://scodescanner.info)
+
 ## Features
 
 The main features for this tool are:-
 
 1) Scans the whole folder which contains multiple PHP files.
 2) It will not only notify you at which file but also which line the vulnerable code exists for quickly identified it.
-3) It runs on your localhost, where you will have to give the folder name for scans.
-4) Give results out for each file inside the anchors tag (So you can move on to it.)
-5) You can add more functions which are dangerous if you found missing any inside the vulnerablefunctions python file.
+3) Scans not only the PRE-Defined PHP variables but also scans the custom variables. Like a `$test1 = $_GET["aaa"]`, then it scans for both `$test1` and the `GET` variables inside the source code
+4) Scans functions with a function that contains our variable. Like `include(htmlentities($test))` so it will parse this and give the results like the $test variable found inside the include function. Because there might be possiblity of using base64 function instead of htmlentities.
+5) It runs on your localhost, where you will have to give the folder name for scans.
+6) Give results out for each file inside the anchors tag (So you can move on to it.)
+7) You can add more functions which are dangerous if you found missing any inside the vulnerablefunctions python file.
+
+## Demo Video
+
+Please go to:- http://scodescanner.info/2021/05/21/example-content/
 
 ## How to run it?
 
