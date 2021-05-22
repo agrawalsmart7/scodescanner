@@ -35,7 +35,7 @@ PHP, Python3
 
 If you don't have any of these please download, then,
 
-1) Upload your folder which contains files inside upload directory, find it in root folder of this tool. This is important to run this tool.
+1) Upload your folder which contains files inside upload directory, find it in root folder of this tool. This is important to run this tool (Working on this to make it more smoother).
 2) On terminal:- `pip install -r requirements.txt`<br>
 3) On terminal:- ```php -S localhost:80```<br>
 4) Browse to localhost<br>
