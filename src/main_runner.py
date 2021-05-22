@@ -2,7 +2,7 @@ import os
 from src.parserer import parser 
 from src.globalvar import html_return
 
-def runner(f, file_name, out_result, outdirectory):
+def runner(f, file_name, out_result, outdirectory, forhtml):
 
     with open(file_name, 'r') as filecon:
         fullcontent = [line.strip() for line in filecon.readlines()]
@@ -44,5 +44,5 @@ def runner(f, file_name, out_result, outdirectory):
             pass
         else:
             
-            html_return.append('\n\n<br><br>Please find the result output :- <a href="'+outdirectory+'">Output file</a>')
+            html_return.append('\n\n<br><br>Please find the result output :- <a href="'+outdirectory+'">'+forhtml+'</a>')
             
