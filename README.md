@@ -41,6 +41,10 @@ If you don't have any of these please download, then,
 4) Browse to localhost<br>
 5) Type the foldername which contains the PHP files
 
+OR run it on Terminal to see if any error pops up
+
+`python scscanner.py foldername`
+
 **Note: Please try not to change the main file name 'scscanner.py', otherwise we will have to change the name in upload.php file.**
 
 ## Feedback
