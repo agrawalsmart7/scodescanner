@@ -21,7 +21,9 @@ The main features for this tool are:-
 
 This tool uses vulnerable scripts from this repo:- https://github.com/snoopysecurity/Vulnerable-Code-Snippets
 
-There are predifined folder named final, where it contains the PHP files/folder. Just for test.
+There are predifined folder named final, where it contains the PHP files/folder. Just for test. You can also use that folder to see how this tool will find the results in PHP.
+
+On terminal: `python scscanner.py final`
 
 ## Demo Video
 
