@@ -24,7 +24,6 @@ def runner(f, file_name, out_result, forhtml):
         if var_dict:
             var_dict_emp = 1
             for variables, lnfunc in var_dict.items():
-                print(str(lnfunc), "aaaaaaaaaaaaaaa")
                 info ="[+]VULNERABLE at line:"+str(lnfunc[1]) + "<br> &emsp; Found Variable: "+ str(variables)+ "\t Found Inside &emsp; -- \t &emsp;"+ str(lnfunc[0])+"<br><br>"
                 out_result.write(info)
         

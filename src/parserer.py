@@ -36,7 +36,6 @@ def parse_helper(content, listresults, linenumber, out_result, only_variables, v
             for result in set(result2):
                 check_result = check_func(result.strip(), content)
                 if check_result:
-                    print(type(check_result))
                     vars[result] = [check_result, linenumber]
                     
     result4 = re.findall(regex4, str(content))
