@@ -21,7 +21,9 @@ The main features for this tool are:-
 
 This tool uses vulnerable scripts from this repo:- https://github.com/snoopysecurity/Vulnerable-Code-Snippets
 
-There are predifined folder named final, where it contains the PHP files/folder. Just for test.
+There are predifined folder named final, where it contains the PHP files/folder. Just for test. You can also use that folder to see how this tool will find the results in PHP.
+
+On terminal: `python scscanner.py final`
 
 ## Demo Video
 
@@ -40,6 +42,10 @@ If you don't have any of these please download, then,
 3) On terminal:- ```php -S localhost:80```<br>
 4) Browse to localhost<br>
 5) Type the foldername which contains the PHP files
+
+OR run it on Terminal to see if any error pops up
+
+`python scscanner.py foldername`
 
 **Note: Please try not to change the main file name 'scscanner.py', otherwise we will have to change the name in upload.php file.**
 
