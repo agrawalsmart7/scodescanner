@@ -1,10 +1,17 @@
 import os
 from src.parserer import parser 
-from src.globalvar import html_return
+from src.globalvar import html_return, totalfiles
+from utils import logs_handler
 
-def runner(f, file_name, out_result, outdirectory, forhtml):
+logger = logs_handler.create_logger(__name__, remote_logging=False) 
 
-    with open(file_name, 'r') as filecon:
+
+def runner(f, file_name, out_result, forhtml):
+
+    totalfiles.append(file_name)
+
+    logger.info("Scanning File: "+ file_name)
+    with open(file_name, 'r',  encoding="utf8") as filecon:
         fullcontent = [line.strip() for line in filecon.readlines()]
         results = [{str(line.strip()): number} for number, line in enumerate(f, start=1)]
         
@@ -17,7 +24,7 @@ def runner(f, file_name, out_result, outdirectory, forhtml):
         if var_dict:
             var_dict_emp = 1
             for variables, lnfunc in var_dict.items():
-                
+                print(str(lnfunc), "aaaaaaaaaaaaaaa")
                 info ="[+]VULNERABLE at line:"+str(lnfunc[1]) + "<br> &emsp; Found Variable: "+ str(variables)+ "\t Found Inside &emsp; -- \t &emsp;"+ str(lnfunc[0])+"<br><br>"
                 out_result.write(info)
         
@@ -43,6 +50,8 @@ def runner(f, file_name, out_result, outdirectory, forhtml):
         if var_dict_emp == 0 and indi_vars_emp  == 0 and indi_prevars_emp == 0:
             pass
         else:
-            
-            html_return.append('\n\n<br><br>Please find the result output :- <a href="'+outdirectory+'">'+forhtml+'</a>')
+
+                 
+            out = '<br><br>Please find the result output : <a href="/'+forhtml+'">'+forhtml+'</a>'
+            html_return.append('\n\n'+out)
             
