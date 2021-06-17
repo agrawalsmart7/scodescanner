@@ -11,7 +11,7 @@ New features are added on this tool that makes a little more smoothness.
 1) Scans folder inside folder inside folder and so on..
 2) Added more functions on which user untrusted input should not allowed
 3) Added more ways of finding user controlled variable, one eg:- `$x = $this->getRequest()->getParam('id')` (More to come)
-4) Added scan timer.
+4) Added scan timer ( Scans 4k+ files in 1min around.)
 5) Changes in the output results. (Opens a Python HTTP Web server)
 6) Provide either Folder or PHP File location.
 
