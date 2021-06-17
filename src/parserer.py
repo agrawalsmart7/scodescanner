@@ -32,11 +32,11 @@ def parse_helper(content, listresults, linenumber, out_result, only_variables, v
         info ="[!] At Line "+str(linenumber)+ "<br> PHP PRE-Defined Variables found "+ str(len(set(result2)))+" :&#9;"+str(set(result2))+"<br><br>"
         out_result.write(info)
         # logger.info(info)
-        if result2:
-            for result in set(result2):
-                check_result = check_func(result.strip(), content)
-                if check_result:
-                    vars[result] = [check_result, linenumber]
+        for result in set(result2):
+            check_result = check_func(result.strip(), listresults)
+            if check_result:
+                for check_r in check_result:
+                    vars[result] = [check_r[0], check_r[1]]
                     
     result4 = re.findall(regex4, str(content))
     
