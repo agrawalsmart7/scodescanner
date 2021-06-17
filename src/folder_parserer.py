@@ -1,10 +1,11 @@
 from genericpath import isdir
 import os
-from src.globalvar import html_return
+from src.globalvar import html_return, totalfiles
 from src.main_runner import runner
 from utils import logs_handler
 logger = logs_handler.create_logger(__name__, remote_logging=False)
 import six
+import time
 
 def filerunner(filename):
 
@@ -51,7 +52,7 @@ def fileparser(filename, outputfile):
     else:
         logger.info("[-] No vulnerable parameter found :( ")    
 
-def folderparser(folder, outputfile):
+def folderparser(folder, outputfile, starttime):
     cwd = os.getcwd()
     results_dir = cwd+'/results/'
     # outdirectory = 'results/'
@@ -75,6 +76,7 @@ def folderparser(folder, outputfile):
                             runner(f, filename, out_result, forhtml)
                             
     if html_return:
-       output_data(results_dir, outputfile)
+        print("<br><br>\n\nTotal file scanned: "+ str(len(totalfiles)) + "\nTotal time taken: "+ str(time.time()- starttime))
+        output_data(results_dir, outputfile)
     else:
         logger.info("[-] No vulnerable parameter found :( ")

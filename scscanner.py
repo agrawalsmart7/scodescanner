@@ -1,8 +1,8 @@
 from utils import logs_handler
 from src.folder_parserer import folderparser, fileparser
 from src.globalvar import totalfiles 
-import time
 import argparse
+import time
 
 parser = argparse.ArgumentParser()
 rootparser = parser.add_mutually_exclusive_group()
@@ -27,16 +27,16 @@ def main():
     starttime = time.time()
     if folder:
         #add function for parsing files from folder
-        folderparser(folder, outputfile)
+        folderparser(folder, outputfile, starttime)
 
     elif default:
-        folderparser(default, outputfile)
+        folderparser(default, outputfile, starttime)
     elif file:
-        fileparser(file, outputfile)
+        fileparser(file, outputfile, starttime)
     else:
         logger.info("\n[!] Please provide the folder to scan\n")
     
-    print("<br><br>\n\nTotal file scanned: "+ str(len(totalfiles)) + "\nTotal time taken: "+ str(time.time()- starttime))
+    
     # logger.info(html_return)
     
     
