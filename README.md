@@ -6,7 +6,7 @@ Learn more on [http://scodescanner.info](http://scodescanner.info)
 
 ## New Features
 
-New features are added on this tool that makes a little more smoothness.
+New features are added on this tool.
 
 1) Scans folder inside folder inside folder and so on..
 2) Added more functions on which user untrusted input should not allowed
