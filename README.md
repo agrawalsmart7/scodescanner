@@ -56,8 +56,6 @@ If you don't have any of these please download, then,
 2) On terminal:- `pip install -r requirements.txt`<br> 
 3) On terminal:- `python scodescanner.py --help`<br>
 
-**Note: Please try not to change the main file name 'scscanner.py', otherwise we will have to change the name in upload.php file.**
-
 ## Feedback
 
 I would really like to hear your thoughts on this tool. And if you wanted to contribute in this tool please let me know on Twitter [agrawalsmart7](https://twitter.com/agrawalsmart7) or you can send me a Pull request.
