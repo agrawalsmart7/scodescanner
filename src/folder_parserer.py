@@ -36,7 +36,7 @@ def output_data(results_dir, outputfile):
     else:
         logger.info("Could not able to open the HTTP server, ", exit)
 
-def fileparser(filename, outputfile):
+def fileparser(filename, outputfile, starttime):
     cwd = os.getcwd()
     results_dir = cwd+'/results/'
 
@@ -48,7 +48,8 @@ def fileparser(filename, outputfile):
                 runner(f, filename, out_result, filenames)
 
     if html_return:
-       output_data(results_dir, outputfile)
+        print("<br><br>\n\nTotal file scanned: "+ str(len(totalfiles)) + "\nTotal time taken: "+ str(time.time()- starttime))
+        output_data(results_dir, outputfile)
     else:
         logger.info("[-] No vulnerable parameter found :( ")    
 
