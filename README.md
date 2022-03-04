@@ -18,6 +18,14 @@ New features are added on this tool.
 6) Scan each variable in each file
 7) Gives you the best results on the basis of rules defined in rules directory.
 
+## How does it work?
+
+1) There are number of yaml files inside rules directory those yaml files contains `$replace` which actually replaced with php variable for ex: `$uservar, $_GET['aaa']`. 
+
+2) The variables are grepped by Regex and get replace the variables defined inside yaml files ($replace) and creates new yaml file inside `/temp` directory. 
+
+3) Then this tool runs semgrep and use the temp directory as config path and start scanning the code.
+
 ## How to run it?
 
 ### Requirements
