@@ -24,8 +24,9 @@ def folderparser(folder, totalfiles):
     cwd1 = os.getcwd()
     allfolders = [x[0] for x in os.walk(cwd1)]
     for filename in os.listdir(cwd1): 
-        totalfiles.append(totalfiles)
-        filerunner(filename)
+        if filename.endswith(".php"):
+            totalfiles.append(totalfiles)
+            filerunner(filename)
 
     if allfolders:
         for dir in allfolders:
