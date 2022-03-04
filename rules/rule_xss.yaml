@@ -1,0 +1,13 @@
+rules: 
+- id: Rule-XSS-$replace
+  patterns: 
+    - pattern:
+        $replace
+    - pattern-inside:
+        $FUNC    
+    - metavariable-regex:
+        metavariable: $FUNC
+        regex: echo.*
+  message: XSS Injection -- $replace 
+  languages: [php]           
+  severity: WARNING

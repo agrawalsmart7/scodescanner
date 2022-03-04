@@ -1,8 +1,14 @@
+from pdb import find_function
+from tracemalloc import start
+from typing import final
 from utils import logs_handler
 from src.folder_parserer import folderparser, fileparser
-from src.globalvar import totalfiles 
 import argparse
 import time
+import os
+from iteration_utilities import unique_everseen
+from src.semgrep_run import sem_initiator, sem_runner
+import tempfile, shutil
 
 parser = argparse.ArgumentParser()
 rootparser = parser.add_mutually_exclusive_group()
@@ -25,20 +31,30 @@ logger = logs_handler.create_logger(__name__, remote_logging=False)
 
 def main():
     starttime = time.time()
-    if folder:
-        #add function for parsing files from folder
-        folderparser(folder, outputfile, starttime)
+    
+    logger.info("Starting the scanner - " + str(time.strftime('%l:%M%p %z on %b %d, %Y')) +'\n' )
+    
+    home_dir = os.getcwd()
+    os.mkdir(home_dir+"/temp/" )
+    tempfile.tempdir = home_dir+"/temp/" # this is to make /temp as temporary directory
+    tempdir = tempfile.gettempdir()
+    totalfiles = []
+    try:
+        if folder:
+            list_of_variables = list(unique_everseen(folderparser(folder, totalfiles)))
+            os.chdir(home_dir)
+            sem_initiator(list_of_variables, home_dir, tempdir)
+            sem_runner(home_dir, tempdir, outputfile, folder)
+        elif file:
+            
+            sem_initiator(fileparser(file), home_dir, tempdir)
+            sem_runner(home_dir, tempdir, outputfile, folder)
+        else:
+            logger.info("\n[!] Please provide the folder to scan\n")
+    finally:
+        shutil.rmtree(tempdir)
+    logger.info("Total Files - "+ str(len(totalfiles))+ "\t Time Taken -" +str(time.time() - starttime))
 
-    elif default:
-        folderparser(default, outputfile, starttime)
-    elif file:
-        fileparser(file, outputfile, starttime)
-    else:
-        logger.info("\n[!] Please provide the folder to scan\n")
-    
-    
-    # logger.info(html_return)
-    
     
 
 if __name__ == '__main__':

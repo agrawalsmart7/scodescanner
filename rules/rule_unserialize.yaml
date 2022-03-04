@@ -1,0 +1,11 @@
+rules:
+- id: Rule-unserialize-$replace
+  patterns:
+    - pattern-either:
+      - pattern: 
+          unserialize($replace);
+      - pattern: 
+          unserialize($replace, ...);    
+  message: Found unserialize Injection for variable -  $replace
+  languages: [php]
+  severity: WARNING

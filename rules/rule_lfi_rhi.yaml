@@ -1,0 +1,9 @@
+rules:
+- id: Rule-LFI-$replace
+  patterns:
+    - pattern-either:
+      - pattern: 
+          include($replace);
+  message: Found LFI Injection for variable -  $replace
+  languages: [php]
+  severity: WARNING

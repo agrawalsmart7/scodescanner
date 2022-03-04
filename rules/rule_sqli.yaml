@@ -1,0 +1,13 @@
+rules:
+- id: Rule-SQLi-$replace
+  patterns:
+    - pattern:
+        $replace
+    - pattern-inside:
+        $FUNC    
+    - metavariable-regex:
+        metavariable: $FUNC
+        regex: \"SELECT.[\*\w+,].*FROM.[\w+,].*WHERE.[\w+,].*|[\'\"]DELETE.FROM.[\w+].*[\'\"]|[\'\"]SELECT.*[\'\"]
+  message: Possible SQL Injection for variable -  $replace
+  languages: [php]
+  severity: WARNING

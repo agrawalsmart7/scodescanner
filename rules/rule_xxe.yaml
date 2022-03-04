@@ -1,0 +1,8 @@
+rules:
+- id: Rule-XXE-$replace
+  patterns:
+    - pattern-either:
+      - pattern: loadXML($replace, ...)
+  message: Found XXE Injection for variable -  $replace
+  languages: [php]
+  severity: WARNING

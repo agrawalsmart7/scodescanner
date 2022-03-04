@@ -1,0 +1,19 @@
+rules:
+- id: Rule_RCE_$replace
+  patterns:
+    - pattern-either:
+        - pattern: $SYSFUNC(..., $replace, ...)
+        - pattern: $SYSFUNC('...', $replace, '...')
+        - pattern: $SYSFUNC(..., $replace, ...)
+    - pattern-not:
+        $SYSFUNC('...')
+
+    - metavariable-regex:
+        metavariable: $SYSFUNC
+        regex: system|exec|eval|passthru|shell_exec
+              
+  message: Found Remote Code Execution for variable - $replace
+  languages: [php]
+  severity: WARNING
+
+

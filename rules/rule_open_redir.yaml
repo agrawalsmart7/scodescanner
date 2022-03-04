@@ -1,0 +1,8 @@
+rules:
+- id: Rule-OpenRedirect-$replace
+  patterns:
+    - pattern-either:
+      - pattern: header($X.$replace)
+  message: Found OpenRedirect Injection for variable -  $replace
+  languages: [php]
+  severity: WARNING

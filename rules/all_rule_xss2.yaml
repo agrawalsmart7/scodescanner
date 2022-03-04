@@ -1,0 +1,16 @@
+rules: 
+- id: Rule-XSS2
+  patterns: 
+    - pattern-either: 
+      - pattern: |
+          $Y = $SYSFUNC[...];
+          ...
+          $Z = "...$Y...";
+          ...
+          echo $Z;   
+    - metavariable-regex:
+        metavariable: $SYSFUNC
+        regex: \$\_GET|\$\_POST|\$\_REQUEST
+  message: XSS2 Injection
+  languages: [php]           
+  severity: WARNING

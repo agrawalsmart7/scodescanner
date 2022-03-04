@@ -1,0 +1,11 @@
+rules:
+- id: Rule-SSRF-$replace
+  patterns:
+    - pattern-either:
+      - pattern: $SYSFUNC(..., $replace, ...)
+    - metavariable-regex:
+        metavariable: $SYSFUNC
+        regex: file_put_contents|file_get_contents|fopen|fsockopen|curl_exec|curl_setopt
+  message: Found SSRF Injection  for variable -  $replace
+  languages: [php]
+  severity: WARNING
