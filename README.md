@@ -26,6 +26,40 @@ New features are added on this tool.
 
 3) Then this tool runs semgrep and use the temp directory as config path and start scanning the code.
 
+## Want to Create Rules?
+
+There are two types of rules you can create and those are differ by their file name -
+1) all_rule_something.yaml
+2) rule_something.yaml
+
+The difference between in these yaml files is the `all` naming files scans the whole source code without the use of userinput variable. It does not support any user defined variable, it just scan the pattern and if pattern match inside any file it returns the result.
+
+For ex:- 
+
+```
+$Y = $SYSFUNC[...];
+...
+$Z = "...$Y...";
+...
+echo $Z;
+```
+
+This above pattern will find this XSS -
+
+```
+ $pin = $_POST['pin'];
+
+if (!is_numeric($pin) || (strlen($pin) != 3)) {
+  $message = "Sorry, the pin '$pin' is Invalid";
+  echo $message;
+  }
+  
+```
+
+For the second one, write the semgrep rule and use `$replace` variable where ever you want to change with actual variable. 
+
+**Note**: We used $replace inside ruleID and message in yaml, that will make the file different for each variable.
+
 ## How to run it?
 
 ### Requirements
