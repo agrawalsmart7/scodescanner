@@ -2,47 +2,21 @@
 
 The SCodeScanner stands for Source Code Scanner, where you can scan your source code files like PHP and get identify the vulnerabilities inside it. The tool can use by Pentester, Developer to quickly identify the weakness.
 
+The tool supports the semgrep integration.
+
 Learn more on [http://scodescanner.info](http://scodescanner.info)
 
-## New Features
+## Features
 
 New features are added on this tool.
 
 1) Scans folder inside folder inside folder and so on..
-2) Added more functions on which user untrusted input should not allowed
-3) Added more ways of finding user controlled variable, one eg:- `$x = $this->getRequest()->getParam('id')` (More to come)
-4) Added scan timer ( Scans 4k+ files in 1min around.)
-5) Changes in the output results. (Opens a Python HTTP Web server)
-6) Provide either Folder or PHP File location.
-
-
-## Features
-
-The main features for this tool are:-
-
-1) Scans the whole folder which contains multiple PHP files. (Updated, above)
-2) Scans folder inside a folder, *NOTE: This scans only one time, it will not scan folders inside folders inside folder* (Supports now, above)
-3) It will not only notify you at which file but also which line the vulnerable code exists for quickly identified it.
-4) Scans not only the PRE-Defined PHP variables but also scans the custom variables. Like a `$test1 = $_GET["aaa"]`, then it scans for both `$test1` and the `GET` variables inside the source code
-5) Scans functions with a function that contains our variable. Like `include(htmlentities($test))` so it will parse this and give the results like the $test variable found inside the include function. Because there might be possiblity of using base64 function instead of htmlentities.
-6) Give results out for each file inside the anchors tag (So you can move on to it.)
-7) You can add more functions which are dangerous if you found missing any inside the vulnerablefunctions python file.
-
-## Test Vulnerable Folders
-
-This tool uses vulnerable scripts from this repo:- https://github.com/snoopysecurity/Vulnerable-Code-Snippets
-
-There are predifined folder named final, where it contains the PHP files/folder. Just for test. You can also use that folder to see how this tool will find the results in PHP.
-
-On terminal: `python scscanner.py --help`<br>
-
-`--fo - Full path of Foldername`<br>
-`--De - If folder inside the uploads directory`<br>
-`--fi - Full path for the file`<br>
-
-## Demo Video
-
-Please go to:- http://scodescanner.info/2021/05/21/example-content/
+2) Added more ways of finding user controlled variable, one eg:- `$x = $this->getRequest()->getParam('id')`
+3) Integration of Semgrep
+4) It will not only notify you at which file but also which line the vulnerable code exists for quickly identified it.
+5) Results out in `.txt` file
+6) Scan each variable in each file
+7) Gives you the best results on the basis of rules defined in rules directory.
 
 ## How to run it?
 
@@ -53,8 +27,10 @@ PHP, Python3
 If you don't have any of these please download, then,
 
 1) Python V3 must be installed
-2) On terminal:- `pip install -r requirements.txt`<br> 
-3) On terminal:- `python scodescanner.py --help`<br>
+2) On terminal:- `pip3 install -r requirements.txt`<br> 
+3) On terminal:- `python3 scodescanner.py --help`<br>
+
+If still you face import error please try to import it with pip and open a issue if possible.
 
 ## Feedback
 
