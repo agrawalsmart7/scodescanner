@@ -32,7 +32,7 @@ def temp_maker(tempdir, listofvariables, homedir):
             
 def sem_runner(homedir, tempdir, outputfile, folder):
     outresults = homedir+'/results/'+outputfile
-    result = subprocess.run(['semgrep', '--config', tempdir, folder, '--include', '*.php', '--strict'], stdout=PIPE, stderr= PIPE, universal_newlines=True)
+    result = subprocess.run(['semgrep', '--config', tempdir, folder], stdout=PIPE, stderr= PIPE, universal_newlines=True)
     if result.stdout:
         logger.info('\n'+result.stdout)
         with open(outresults, 'w') as f:
