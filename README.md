@@ -26,6 +26,18 @@ New features are added on this tool.
 
 3) Then this tool runs semgrep and use the temp directory as config path and start scanning the code.
 
+## Semgrep Errors you should know?
+
+1) There are some errors you might face when running the tool - 
+
+`Error while running rules: 'utf-8' codec can't decode byte 0xe2 in position 3622: invalid continuation byte` <br>This means that some of your file is not PHP even if the extension is `.php`, so you need proper formated of PHP files (which of-course modern IDE also alerts you)
+
+2) If you face any error related to this:-
+
+`Error while running rules: Separator is not found, and chunk exceed the limit`
+
+Again its semgrep error, and it generate because of running huge number of rules on huge number of files - 
+
 ## Want to Create Rules?
 
 There are two types of rules you can create and those are differ by their file name -
