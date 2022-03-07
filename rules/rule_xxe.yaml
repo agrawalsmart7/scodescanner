@@ -1,8 +1,13 @@
 rules:
 - id: Rule-XXE-$replace
   patterns:
-    - pattern-either:
-      - pattern: loadXML($replace, ...)
+    - pattern: 
+        $replace
+    - pattern-inside:
+        $SYSFUNC(...)
+    - metavariable-regex:
+        metavariable: $SYSFUNC
+        regex: loadXML
   message: Found XXE Injection for variable -  $replace
   languages: [php]
   severity: WARNING
