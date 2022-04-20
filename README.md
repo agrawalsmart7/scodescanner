@@ -17,6 +17,9 @@ New features are added on this tool.
 5) Results out in `.txt` file
 6) Scan each variable in each file
 7) Gives you the best results on the basis of rules defined in rules directory.
+8) Send file to Jira
+9) Send file to Slack
+10) Added False Positive Remover
 
 ## How does it work?
 
