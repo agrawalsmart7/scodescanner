@@ -1,6 +1,3 @@
-from pdb import find_function
-from tracemalloc import start
-from typing import final
 from utils import logs_handler
 from src.folder_parserer import folderparser, fileparser
 import argparse
