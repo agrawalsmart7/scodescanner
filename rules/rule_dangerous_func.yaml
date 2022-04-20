@@ -1,11 +1,15 @@
 rules:
-  - id: Rule_XSS = $replace
-    message: Variable $replace - Vulnerable to Cross-Site Scripting `
+  - id: Rule_dangerous_funct = $replace
+    message: Variable $replace - Found inside dangerous function.`
     languages:
       - php
     mode: taint
     pattern-sinks:
-      - pattern-regex: echo.*
+      - patterns:
+        - pattern-inside: $DANGEROUS_FUNCS(...)
+        - metavariable-regex:
+            metavariable: $DANGEROUS_FUNCS
+            regex: system|eval|passthru|exec|shell_exec|loadXML|curl_exe|include|file_put_contents|file_get_contents|fopen|fsockopen|curl_exec|curl_setopt|unserialize
     pattern-sanitizers:
       - patterns:
         - pattern: $X

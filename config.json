@@ -1,0 +1,20 @@
+{
+    "slack":
+    [
+        {
+            "bot_token": "", 
+            "channel_name": ""
+        }
+    ],
+    "jira":
+    [
+        {
+            "jira_username": "",
+            "jira_api": "",
+            "project_id": "",
+            "serverurl": ""  
+        }
+    ]
+
+
+}

@@ -1,5 +1,5 @@
 rules:
-- id: Rule-OpenRedirect-$replace
+- id: Rule-OpenRedirect = $replace
   patterns:
     - pattern-either:
       - pattern: header($X.$replace)

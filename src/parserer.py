@@ -1,7 +1,6 @@
 import re
 from src.regexes import regex1,regex1_1, regway, regex3, regex4_1, regex4_2
 from utils import logs_handler
-import time
 
 logger = logs_handler.create_logger(__name__, remote_logging=False) 
 

@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 from subprocess import PIPE
@@ -30,12 +31,29 @@ def temp_maker(tempdir, listofvariables, homedir):
         elif filename.startswith('all'):
             shutil.copyfile(rules+filename, tempdir+filename)
             
-def sem_runner(homedir, tempdir, outputfile, folder):
+def sem_runner(homedir, tempdir, outputfile, folder, lines, verbose, jsonfile):
+    jsonoutput = homedir+'/results/'+jsonfile
     outresults = homedir+'/results/'+outputfile
-    result = subprocess.run(['semgrep', '--config', tempdir, folder], stdout=PIPE, stderr= PIPE, universal_newlines=True)
-    if result.stdout:
-        logger.info('\n'+result.stdout)
-        with open(outresults, 'w') as f:
-            f.write(result.stdout)
-    elif result.stderr:
-        logger.error(result.stderr) 
+    logger.info("Running Semgrep on Folder - "+ folder)
+    if verbose:
+        result = subprocess.run(['semgrep', '--config', tempdir, folder, '--max-lines-per-finding', str(lines),'--verbose'], stdout=PIPE, stderr= PIPE, universal_newlines=True)
+    elif jsonfile:
+        result = subprocess.run(['semgrep', '--config', tempdir, folder,'--max-lines-per-finding', str(lines), '--json', '-o', jsonoutput], stdout=PIPE, stderr= PIPE, universal_newlines=True)
+
+    else:
+       result = subprocess.run(['semgrep', '--config', tempdir, folder, '--max-lines-per-finding', str(lines)], stdout=PIPE, stderr= PIPE, universal_newlines=True)
+
+    if not jsonfile:
+        if result.stdout:
+            logger.info("Successfully found the Findings - \n")
+            logger.info('\n'+result.stdout)
+            with open(outresults, 'w') as f:
+                f.write(result.stdout)
+        elif result.stderr:
+            logger.info(result.stderr)
+    if jsonfile:
+        if result.stdout:
+            logger.info("Successfully found the Findings - \n")
+            logger.info('\n'+result.stdout)
+        elif result.stderr:
+            logger.info(result.stderr) 
