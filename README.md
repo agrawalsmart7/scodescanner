@@ -83,6 +83,12 @@ If you don't have any of these please download, then,
 
 If still you face import error please try to import it with pip and open a issue if possible.
 
+### Config.json
+
+1) Please give the Slack token and channel name if you used --slack flag<br>
+2) Please give username, API, Project ID, InstanceURL if you used --jira flag.<br>
+
+
 ## Sample Data
 
 ```
