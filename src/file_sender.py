@@ -41,6 +41,7 @@ def slack_token_retriever(send_to_app):
         for lists in configdata['slack']:
             if lists['bot_token'] == "" and lists['channel_name'] == "":
                 logger.error("Please provide the valid Bot_Token and Channel Name")
+                sys.exit()
             else:
                 return (lists['bot_token'], lists['channel_name'])
 
@@ -61,6 +62,6 @@ def slack_issue_creator(filename):
     }
     response = requests.post( url=url, data=data, headers={"Content-Type": "application/x-www-form-urlencoded"})
     if response.status_code == 200:
-        print('\n\n', logger.info("File Successfully Sent to Slack"))
+        logger.info("File Successfully Sent to Slack")
 
 

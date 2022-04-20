@@ -16,7 +16,7 @@ rootparser.add_argument('--folder', help='Scan folder of the specified path')
 rootparser.add_argument('--file', help='Please provide file path to Scan file')
 parser.add_argument('--verbose', help='For verbose running')
 parser.add_argument('--maxlines', help='Please provide maxium line numbers', default=3)
-parser.add_argument('--outputfile', help='Provide the filename', required=True)
+parser.add_argument('-o', '--outfile', help='Provide the filename', required=True)
 parser.add_argument('--json', help='For Json OutPut')
 parser.add_argument('--jira', help='Send OutPut to your Jira instance', action='store_true')
 parser.add_argument('--slack', help='Send OutPut to your Slack WorkSpace Channel', action='store_true')
@@ -29,7 +29,7 @@ folder = argss.folder
 file = argss.file
 lines = argss.maxlines
 verbose = argss.verbose
-outputfile = argss.outputfile
+outputfile = argss.outfile
 jsonfile = argss.json
 check = argss.check
 jira = argss.jira

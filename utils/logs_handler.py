@@ -30,7 +30,7 @@ def create_logger(logger_name, remote_logging=False):
     logger = logging.getLogger(logger_name)
     if not logger.handlers:
         logger.setLevel(logging.DEBUG)
-        log_template = "%(asctime)s %(module)s %(levelname)s: %(message)s"
+        log_template = "%(module)s %(levelname)s: %(message)s"
         formatter = logging.Formatter(log_template)
         log_file_size_in_mb = 10
         count_of_backups = 10  # example.log example.log.1 example.log.2
@@ -47,7 +47,7 @@ def create_logger(logger_name, remote_logging=False):
         logger.addHandler(file_handler)
 
         # Stdout handler
-        log_template = "%(asctime)s %(module)s %(levelname)s: %(message)s"
+        log_template = "%(module)s %(levelname)s: %(message)s"
         formatter = logging.Formatter(log_template)
         stdout_handler = logging.StreamHandler(sys.stdout)
         stdout_handler.setFormatter(formatter)
@@ -55,7 +55,7 @@ def create_logger(logger_name, remote_logging=False):
 
         if remote_logging:
             # HTTP handler
-            log_template = "%(asctime)s %(module)s %(levelname)s: %(message)s"
+            log_template = "%(module)s %(levelname)s: %(message)s"
             formatter = logging.Formatter(log_template)
             http_handler = logging.handlers.HTTPHandler(host=cfg.remote_logging_host,
                                                         url=cfg.remote_logging_endpoint,
