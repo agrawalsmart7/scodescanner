@@ -6,6 +6,7 @@ The tool supports the semgrep integration.
 
 Learn more on [http://scodescanner.info](http://scodescanner.info)
 
+
 ## Features
 
 New features are added on this tool.
@@ -88,6 +89,10 @@ If still you face import error please try to import it with pip and open a issue
 1) Please give the Slack token and channel name if you used --slack flag<br>
 2) Please give username, API, Project ID, InstanceURL if you used --jira flag.<br>
 
+
+### Give me shout out
+
+If you found anything by the help of ScodeScanner, only thing it wants a Shout Out, that will great. 
 
 ## Sample Data
 
