@@ -1,0 +1,72 @@
+rules:
+
+-   id: image
+    regex: image\s*\:\s+\w+\:\d+.+
+    message: Alert - Image version used instead of latest - Please Check if version is latest
+    severity: Low
+
+-   id: automountServiceAccountToken
+    regex: automountServiceAccountToken\s*\:\s+(:?true|True)
+    message: Alert - SA Token is mounted inside POD - Please change it to false if it is not required.
+    severity: Low
+
+-   id: env
+    regex: env\s*\:\s+.+
+    message: Alert - ENV Variable used - Please use vault instead.
+    severity: Medium
+
+-   id: nodePort
+    regex: nodePort\s*\:+\s+\d+
+    message: Alert - nodePort will allow the application to accessible pubclily. 
+    severity: Low
+
+-   id: rules
+    regex: rules\s*\:\s+
+    message: None
+    severity: None
+    scan: true
+
+-   id: volumes
+    regex: volumes\s*\:\s+
+    message: None
+    severity: None
+    scan: true
+
+-   id: privileged
+    regex: privileged\s*\:\s+(:?true|True)
+    message: Alert - Privileged flag found to set True.
+    severity: High
+
+-   id: allowPrivilegeEscalation
+    regex: allowPrivilegeEscalation\s*\:\s+(:?true|True)
+    message: Alert - Privilege Escalation found to set True.
+    severity: Medium
+
+-   id: allowedCapabilities
+    regex: allowedCapabilities\s*\:\s*
+    message: None
+    severity: None
+    scan: true
+
+-   id: pod-security.kubernetes.io/enforce
+    regex: pod-security.kubernetes.io/enforce\s*\:\s+privileged
+    message: Alert - Found Enforced High Privileged POD Security Policy
+    severity: High
+
+-   id: pod-security.kubernetes.io/audit
+    regex: pod-security.kubernetes.io/audit\s*\:\s+privileged
+    message: Alert - Found Privileged POD Security Policy with Audit log enabled
+    severity: High
+
+-   id: pod-security.kubernetes.io/warn
+    regex: pod-security.kubernetes.io/warn\s*\:\s+privileged
+    message: Alert - Found Privileged POD Security Policy with Warning enabled
+    severity: High
+
+
+    
+# rules:\s.\s+apiGroups\:\s+\[\"\*\"\]\s+resources\:\s+\[\"\*\"\]\s+verbs\:\s+\[\"\*\"\]
+
+# rules:\s.\s+apiGroups\:\s+\[\"\*\"\](?:\s+.+\s|\s+)+resources\:+\s+\[\"\*\"\]
+
+

@@ -1,0 +1,5 @@
+totalfiles = []
+c_findings = []
+l_findings = []
+h_findings = []
+m_findings = []
