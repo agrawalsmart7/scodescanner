@@ -4,8 +4,6 @@ The SCodeScanner stands for Source Code Scanner, where you can scan your source 
 
 The tool supports the semgrep integration.
 
-Learn more on [http://scodescanner.info](http://scodescanner.info)
-
 
 ## Features
 
