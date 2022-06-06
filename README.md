@@ -12,7 +12,7 @@ SCodeScanner stands for Source Code scanner where the user can scans the source 
   
 ## Achievements
 
-SCodeScanner identified 5 CVEs in a CMS plugins.
+SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins.
   
 * CVE-2022-1465
 * CVE-2022-1474
