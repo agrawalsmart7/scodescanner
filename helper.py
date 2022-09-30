@@ -1,5 +1,4 @@
 import shutil
-from typing import final
 from utils import logs_handler
 from src.php.folder_parserer import folderparser, fileparser
 from src.yaml.folder_parserer import yaml_fileparser, yaml_folderparser
