@@ -66,7 +66,7 @@ from src.yaml.globalvar import l_findings, h_findings, m_findings, c_findings
 
 
 # print(os.getcwd())
-# sys.path.append(os.getcwd+"/src/")
+sys.path.append(os.getcwd+"/src/")
 
 logger = logs_handler.create_logger(__name__, remote_logging=False)
 
