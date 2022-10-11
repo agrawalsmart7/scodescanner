@@ -9,6 +9,7 @@ from src.php.semgrep_run import sem_initiator, sem_runner
 from src.common.file_sender import jira_issue_creater, slack_issue_creator
 from src.php.checking import fp_remover
 import tempfile
+import sys
 from src.yaml.globalvar import l_findings, h_findings, m_findings, c_findings
 
 # parser = argparse.ArgumentParser()
