@@ -25,6 +25,7 @@ SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins
 - Download the repository -<br>
 - Run `pip3 install -r requirements.txt` <br>
 - And run `python3 scscanner.py --help` <br>
+- Run with supported lang like `python3 scscanner.py php --help`
 
 ## Why Should I use SCodeScanner?
 
