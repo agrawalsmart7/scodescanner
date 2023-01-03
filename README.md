@@ -39,6 +39,8 @@ SCodeScanner is a fully open source, command line-based Python tool for identify
 
 - Fast scanning: SCodeScanner's rules are designed to check for multiple vulnerabilities at once, which results in fewer files for the rules to process and a faster scanning process overall.
 
+- Visibility - SCodesScanner supported JIRA, SLACK integrations which gives the visibility on the results identified by sending the file to Slack groups or by making the jira Issue.
+
 - Ability to track user input variables: SCodeScanner can identify instances where user input variables are defined in one file but used insecurely in another file.
 
 - Easy-to-read JSON output: SCodeScanner provides results in a JSON format that is easy to read and can be used for further analysis.
