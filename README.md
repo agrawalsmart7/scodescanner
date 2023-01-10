@@ -1,4 +1,4 @@
-<img src="/media/index.svg" width=400>
+ <img src="/media/index.svg" width=400>
 
 # SCodeScanner
 SCodeScanner stands for Source Code scanner where the user can scans the source code for finding the Critical Vulnerabilities. The main objective for this scanner is to find the vulnerabilities inside the source code before code gets published in Prod.
@@ -12,16 +12,6 @@ SCodeScanner stands for Source Code scanner where the user can scans the source 
 5) Works with Rules. We only need to create some rules which the target rule is not present in php/yaml directory.
 6) Rules that can scan advance patterns
   
-## Achievements
-
-SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins.
-  
-* CVE-2022-1465
-* CVE-2022-1474
-* CVE-2022-1527 
-* CVE-2022-1532
-* CVE-2022-1604
-
 ## How to run?
 
 - Download the repository -<br>
@@ -46,6 +36,26 @@ SCodeScanner is a fully open source, command line-based Python tool for identify
 - Ability to track user input variables: SCodeScanner can identify instances where user input variables are defined in one file but used insecurely in another file.
 
 - Easy-to-read JSON output: SCodeScanner provides results in a JSON format that is easy to read and can be used for further analysis.
+
+## Achievements
+
+SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins.
+  
+* CVE-2022-1465
+* CVE-2022-1474
+* CVE-2022-1527 
+* CVE-2022-1532
+* CVE-2022-1604
+
+## References/Tutorials
+
+* https://smart7.in/2022/07/30/Secure-SDLC-Implementation.html
+* https://www.kitploit.com/2022/09/scodescanner-stands-for-source-code.html
+* https://securityonline.info/scodescanner-scan-the-source-code-for-finding-the-critical-vulnerabilities/
+* https://www.sifatnotes.com/2022/09/scodescanner-scodescanner-stands-for.html
+* https://www.cyberhacks200.org/post/source-code-scanner-for-finding-critical-vulnerabilities
+* https://smart7.in/2022/06/15/How-I-found-5-CVEs.html
+* https://haxf4rall.com/2022/08/11/scodescanner-scan-the-source-code-for-finding-the-critical-vulnerabilities/
 
 ## Feedback/Imporvements
 
