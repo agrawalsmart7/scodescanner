@@ -49,6 +49,23 @@ SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins
 * CVE-2022-1532
 * CVE-2022-1604
 
+## Flags/Switches
+
+* `--folder`: The flag takes the folder where the actual code resides. This is a required flag.
+
+* `--file`: If we want to scan a file, the flag is required. 
+
+* `--check`:  This flag will run the false remove after identifying the vulnerabilities. This basically checks whether the user input is real or not. The flag also creates a new modified JSON file after removing all the false positives. But the note point is, the tool will keep both original and modified versions of files.
+
+* `--json`: Responsible for making the json files as output
+
+* `-o`:  This flag will create a text file with the output findings. The purpose of this flag is to make a human readable file that is easy to read. The flag is optional.
+
+* `--jira`: Responsible for sending output files to the JIRA instance. (Need to add configurations inside the config.json file.). The flag is optional.
+
+* `--slack`:  Responsible for sending output files to SLACK instances. (Need to add configurations inside config.json file). The flag is optional.
+
+
 ## References/Tutorials
 
 * https://smart7.in/2022/07/30/Secure-SDLC-Implementation.html
