@@ -59,6 +59,10 @@ SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins
 * https://smart7.in/2022/06/15/How-I-found-5-CVEs.html
 * https://haxf4rall.com/2022/08/11/scodescanner-scan-the-source-code-for-finding-the-critical-vulnerabilities/
 
+## Todolist
+
+Some cool features are coming.
+
 ## Feedback/Imporvements
 
 I would love to hear your feedback on this tool. Open issues if you found any. And open PR request if you have something.
