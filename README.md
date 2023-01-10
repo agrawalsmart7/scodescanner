@@ -1,4 +1,4 @@
-<img src="/media/index.svg" width=500 height=250>
+<img src="/media/logo2.jpg" width=500 height=250>
 
 # SCodeScanner
 SCodeScanner stands for Source Code scanner where the user can scans the source code for finding the Critical Vulnerabilities. The main objective for this scanner is to find the vulnerabilities inside the source code before code gets published in Prod.
