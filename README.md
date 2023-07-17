@@ -68,7 +68,6 @@ SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins
 
 ## References/Tutorials
 
-* https://github.com/returntocorp/semgrep
 * https://smart7.in/2022/07/30/Secure-SDLC-Implementation.html
 * https://www.kitploit.com/2022/09/scodescanner-stands-for-source-code.html
 * https://securityonline.info/scodescanner-scan-the-source-code-for-finding-the-critical-vulnerabilities/
@@ -76,6 +75,10 @@ SCodeScanner received 5 CVEs for finding vulnerabilities in multiple CMS plugins
 * https://www.cyberhacks200.org/post/source-code-scanner-for-finding-critical-vulnerabilities
 * https://smart7.in/2022/06/15/How-I-found-5-CVEs.html
 * https://haxf4rall.com/2022/08/11/scodescanner-scan-the-source-code-for-finding-the-critical-vulnerabilities/
+
+## Special Thanks
+
+* https://github.com/returntocorp/semgrep
 
 ## Todolist
 
